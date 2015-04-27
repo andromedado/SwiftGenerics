@@ -14,6 +14,7 @@
 		B541D0CB1AE93AF2005CEDAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B541D0C91AE93AF2005CEDAF /* LaunchScreen.xib */; };
 		B541D0E11AE93B3B005CEDAF /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541D0E01AE93B3B005CEDAF /* Promise.swift */; };
 		B54998281AEE905400FB6F1F /* Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = B54998271AEE905400FB6F1F /* Examples.m */; };
+		B549982A1AEE943D00FB6F1F /* SwiftGenerics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B54998291AEE943D00FB6F1F /* SwiftGenerics.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		B541D0E01AE93B3B005CEDAF /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		B541D0E31AE93BDC005CEDAF /* GenericsPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GenericsPlayground.playground; sourceTree = "<group>"; };
 		B54998271AEE905400FB6F1F /* Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Examples.m; sourceTree = "<group>"; };
+		B54998291AEE943D00FB6F1F /* SwiftGenerics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SwiftGenerics.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		B541D0B21AE93AF2005CEDAF = {
 			isa = PBXGroup;
 			children = (
+				B54998291AEE943D00FB6F1F /* SwiftGenerics.pdf */,
 				B541D0E31AE93BDC005CEDAF /* GenericsPlayground.playground */,
 				B541D0BD1AE93AF2005CEDAF /* SwiftGenerics */,
 				B541D0BC1AE93AF2005CEDAF /* Products */,
@@ -163,6 +166,7 @@
 			files = (
 				B541D0C61AE93AF2005CEDAF /* Main.storyboard in Resources */,
 				B541D0CB1AE93AF2005CEDAF /* LaunchScreen.xib in Resources */,
+				B549982A1AEE943D00FB6F1F /* SwiftGenerics.pdf in Resources */,
 				B541D0C81AE93AF2005CEDAF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
