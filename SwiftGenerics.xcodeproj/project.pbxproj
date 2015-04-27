@@ -12,20 +12,25 @@
 		B541D0C61AE93AF2005CEDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B541D0C41AE93AF2005CEDAF /* Main.storyboard */; };
 		B541D0C81AE93AF2005CEDAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B541D0C71AE93AF2005CEDAF /* Images.xcassets */; };
 		B541D0CB1AE93AF2005CEDAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B541D0C91AE93AF2005CEDAF /* LaunchScreen.xib */; };
-		B541D0D71AE93AF2005CEDAF /* SwiftGenericsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541D0D61AE93AF2005CEDAF /* SwiftGenericsTests.swift */; };
+		B541D0E11AE93B3B005CEDAF /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541D0E01AE93B3B005CEDAF /* Promise.swift */; };
+		B54998281AEE905400FB6F1F /* Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = B54998271AEE905400FB6F1F /* Examples.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B541D0D11AE93AF2005CEDAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B541D0B31AE93AF2005CEDAF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B541D0BA1AE93AF2005CEDAF;
-			remoteInfo = SwiftGenerics;
+/* Begin PBXCopyFilesBuildPhase section */
+		B554F6A11AED8B240011EAFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50572641AEDD96F00583C89 /* SwiftGenerics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftGenerics-Bridging-Header.h"; sourceTree = "<group>"; };
 		B541D0BB1AE93AF2005CEDAF /* SwiftGenerics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGenerics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B541D0BF1AE93AF2005CEDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B541D0C01AE93AF2005CEDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,20 +38,13 @@
 		B541D0C51AE93AF2005CEDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B541D0C71AE93AF2005CEDAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B541D0CA1AE93AF2005CEDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B541D0D01AE93AF2005CEDAF /* SwiftGenericsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGenericsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B541D0D51AE93AF2005CEDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B541D0D61AE93AF2005CEDAF /* SwiftGenericsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenericsTests.swift; sourceTree = "<group>"; };
+		B541D0E01AE93B3B005CEDAF /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		B541D0E31AE93BDC005CEDAF /* GenericsPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GenericsPlayground.playground; sourceTree = "<group>"; };
+		B54998271AEE905400FB6F1F /* Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Examples.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B541D0B81AE93AF2005CEDAF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B541D0CD1AE93AF2005CEDAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,8 +57,8 @@
 		B541D0B21AE93AF2005CEDAF = {
 			isa = PBXGroup;
 			children = (
+				B541D0E31AE93BDC005CEDAF /* GenericsPlayground.playground */,
 				B541D0BD1AE93AF2005CEDAF /* SwiftGenerics */,
-				B541D0D31AE93AF2005CEDAF /* SwiftGenericsTests */,
 				B541D0BC1AE93AF2005CEDAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				B541D0BB1AE93AF2005CEDAF /* SwiftGenerics.app */,
-				B541D0D01AE93AF2005CEDAF /* SwiftGenericsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +74,10 @@
 		B541D0BD1AE93AF2005CEDAF /* SwiftGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				B541D0C01AE93AF2005CEDAF /* AppDelegate.swift */,
 				B541D0C21AE93AF2005CEDAF /* ViewController.swift */,
-				B541D0C41AE93AF2005CEDAF /* Main.storyboard */,
-				B541D0C71AE93AF2005CEDAF /* Images.xcassets */,
-				B541D0C91AE93AF2005CEDAF /* LaunchScreen.xib */,
-				B541D0BE1AE93AF2005CEDAF /* Supporting Files */,
+				B541D0E01AE93B3B005CEDAF /* Promise.swift */,
+				B54998271AEE905400FB6F1F /* Examples.m */,
+				B541D0E21AE93B48005CEDAF /* Plumbing */,
 			);
 			path = SwiftGenerics;
 			sourceTree = "<group>";
@@ -95,21 +90,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B541D0D31AE93AF2005CEDAF /* SwiftGenericsTests */ = {
+		B541D0E21AE93B48005CEDAF /* Plumbing */ = {
 			isa = PBXGroup;
 			children = (
-				B541D0D61AE93AF2005CEDAF /* SwiftGenericsTests.swift */,
-				B541D0D41AE93AF2005CEDAF /* Supporting Files */,
+				B50572641AEDD96F00583C89 /* SwiftGenerics-Bridging-Header.h */,
+				B541D0C91AE93AF2005CEDAF /* LaunchScreen.xib */,
+				B541D0C71AE93AF2005CEDAF /* Images.xcassets */,
+				B541D0C41AE93AF2005CEDAF /* Main.storyboard */,
+				B541D0C01AE93AF2005CEDAF /* AppDelegate.swift */,
+				B541D0BE1AE93AF2005CEDAF /* Supporting Files */,
 			);
-			path = SwiftGenericsTests;
-			sourceTree = "<group>";
-		};
-		B541D0D41AE93AF2005CEDAF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B541D0D51AE93AF2005CEDAF /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Plumbing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +113,7 @@
 				B541D0B71AE93AF2005CEDAF /* Sources */,
 				B541D0B81AE93AF2005CEDAF /* Frameworks */,
 				B541D0B91AE93AF2005CEDAF /* Resources */,
+				B554F6A11AED8B240011EAFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,24 +123,6 @@
 			productName = SwiftGenerics;
 			productReference = B541D0BB1AE93AF2005CEDAF /* SwiftGenerics.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B541D0CF1AE93AF2005CEDAF /* SwiftGenericsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B541D0DD1AE93AF2005CEDAF /* Build configuration list for PBXNativeTarget "SwiftGenericsTests" */;
-			buildPhases = (
-				B541D0CC1AE93AF2005CEDAF /* Sources */,
-				B541D0CD1AE93AF2005CEDAF /* Frameworks */,
-				B541D0CE1AE93AF2005CEDAF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B541D0D21AE93AF2005CEDAF /* PBXTargetDependency */,
-			);
-			name = SwiftGenericsTests;
-			productName = SwiftGenericsTests;
-			productReference = B541D0D01AE93AF2005CEDAF /* SwiftGenericsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,10 +135,6 @@
 				TargetAttributes = {
 					B541D0BA1AE93AF2005CEDAF = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					B541D0CF1AE93AF2005CEDAF = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = B541D0BA1AE93AF2005CEDAF;
 					};
 				};
 			};
@@ -182,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				B541D0BA1AE93AF2005CEDAF /* SwiftGenerics */,
-				B541D0CF1AE93AF2005CEDAF /* SwiftGenericsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +167,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B541D0CE1AE93AF2005CEDAF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,28 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54998281AEE905400FB6F1F /* Examples.m in Sources */,
 				B541D0C31AE93AF2005CEDAF /* ViewController.swift in Sources */,
 				B541D0C11AE93AF2005CEDAF /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B541D0CC1AE93AF2005CEDAF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B541D0D71AE93AF2005CEDAF /* SwiftGenericsTests.swift in Sources */,
+				B541D0E11AE93B3B005CEDAF /* Promise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B541D0D21AE93AF2005CEDAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B541D0BA1AE93AF2005CEDAF /* SwiftGenerics */;
-			targetProxy = B541D0D11AE93AF2005CEDAF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B541D0C41AE93AF2005CEDAF /* Main.storyboard */ = {
@@ -340,9 +288,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftGenerics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftGenerics/SwiftGenerics-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,43 +301,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftGenerics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B541D0DE1AE93AF2005CEDAF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftGenericsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGenerics.app/SwiftGenerics";
-			};
-			name = Debug;
-		};
-		B541D0DF1AE93AF2005CEDAF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftGenericsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGenerics.app/SwiftGenerics";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftGenerics/SwiftGenerics-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,14 +328,7 @@
 				B541D0DC1AE93AF2005CEDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		B541D0DD1AE93AF2005CEDAF /* Build configuration list for PBXNativeTarget "SwiftGenericsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B541D0DE1AE93AF2005CEDAF /* Debug */,
-				B541D0DF1AE93AF2005CEDAF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

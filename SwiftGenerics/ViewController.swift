@@ -8,18 +8,60 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    var table : UITableView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        println("viewDidLoad!")
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        var foooo : [String] = ["a", "b", "c"]
+        foooo.append("hi")
 
+        var bug = Optional<Int>.None
+        bug = 6
+//        bug = "hi"
+
+        var foo = Promise<Int, Int>(executor:{ (good, bad) in
+            good(5)
+        })
+        var bar = foo.then { (someInt) -> Promise<String, Int> in
+            var foo = Promise<String, Int>(executor:{ (good, bad) in
+                good("dd")
+            })
+            return foo
+        }
+
+        bar.then { (someStr) -> () in
+            println(someStr)
+        }
+
+    }
 
 }
 
+//class Motel<T> {
+//    let numRooms : Int
+//    var guests : [T] = []
+//
+//    init (_ numRooms : Int) {
+//        self.numRooms = numRooms
+//    }
+//
+//    func checkIn(guest : T) -> Bool {
+//        if (numRooms <= self.guests.count) {
+//            return false
+//        }
+//        self.guests.append(guest)
+//        return true
+//    }
+//
+//    func checkOut(guest : T) -> Bool {
+//        if (contains(self.guests, guest)) {
+//            //remove?
+//            return true
+//        }
+//        return false
+//    }
+//}
